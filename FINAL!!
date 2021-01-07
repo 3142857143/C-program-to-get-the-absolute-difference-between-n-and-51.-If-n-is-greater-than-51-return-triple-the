@@ -1,0 +1,48 @@
+/*This program gives absolute difference between n and 51 and if n is bigger then 51 then triples the absolute difference*/
+#include <stdio.h>
+#include <math.h>
+#include <conio.h>
+int difference(int n);
+int bigger(int n);
+int main()
+{
+    int m, n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);/*Getting the value of n into variable n*/
+    m = bigger(n);
+    if(m == n)
+    {
+        printf("%d", difference(n)*3);
+    }
+    else
+    {
+        printf("%d", difference(n));
+    }
+    return 0;
+}
+int bigger(int n)
+{
+    int max;
+    if(n>51)
+    {
+        max = n;
+    }
+    else
+    {
+        max = 51;
+    }
+    return max;
+}
+int difference(int n)
+{
+    int sub;
+    if(n>51)
+    {
+        sub = n - 51;
+    }
+    else
+    {
+        sub = 51 - n;
+    }
+    return sub;
+}
