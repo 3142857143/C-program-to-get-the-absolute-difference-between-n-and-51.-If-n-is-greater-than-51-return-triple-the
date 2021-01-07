@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+#include <conio.h>
+int main()
+{
+	int m=51, n, sub;
+	printf("Enter the integer: ");
+	scanf("%d", &n);
+	if(n>51)
+	{
+		sub = n - 51;
+	}
+	else
+	{
+		sub = 51 - n;
+	}
+	printf("%d", sub);
+	return 0;
+}
